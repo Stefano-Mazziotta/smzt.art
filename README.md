@@ -1,3 +1,4 @@
+Useful links
 https://medium.com/@tsubasakondo_36683/make-laravel-api-only-2da47a0f92b7
 https://www.youtube.com/watch?v=BVNgCzt2pjY
 
@@ -10,3 +11,11 @@ https://oauth2.thephpleague.com/
 https://github.com/laravel/breeze-next
 https://laravel.com/docs/10.x/starter-kits#breeze-and-next
 https://www.youtube.com/watch?v=s_7Pw0ACGGw&t=42s
+
+https://www.youtube.com/watch?v=fsiPXKzcH2M
+
+https://laravel.com/docs/10.x/eloquent-relationships#one-to-many
+
+https://www.iankumu.com/blog/laravel-one-to-many-relationship/
+
+https://stackoverflow.com/questions/45269146/laravel-seeding-many-to-many-relationship

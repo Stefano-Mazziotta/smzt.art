@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('cameras', function (Blueprint $table) {
-            $table->id()->primary();
+            $table->id();
             $table->string('name', 100);
             $table->year('production_year');
             $table->unsignedBigInteger('country_id')->index();
