@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Camera;
+use App\Models\Country;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -10,14 +12,24 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 class CameraFactory extends Factory
 {
     /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = Camera::class;
+
+    /**
      * Define the model's default state.
      *
-     * @return array<string, mixed>
+     * @return array
      */
-    public function definition(): array
+    public function definition()
     {
         return [
-            //
+            'name' => $this->faker->name,
+            'production_year' => $this->faker->year(),
+            'country_id' => Country::all()->random()->id,
         ];
     }
+
 }
