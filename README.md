@@ -72,13 +72,13 @@ Now, your backend is up and running!
 
 ## Features
 
-1. Picture Upload and Optimization
+1. Picture Upload and Optimization </br>
    The backend provides a secure endpoint for uploading pictures. Uploaded pictures are automatically optimized for performance.
 
-2. Album Creation
+2. Album Creation </br>
    You can create new albums using dedicated endpoints. Each album can be associated with a collection of pictures.
 
-3. Metadata Management
+3. Metadata Management </br>
    Manage metadata for pictures and albums, including titles, descriptions, and tags.
 
 ## Usage
