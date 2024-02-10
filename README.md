@@ -119,3 +119,12 @@ https://laravel.com/docs/10.x/eloquent-relationships#one-to-many
 https://www.iankumu.com/blog/laravel-one-to-many-relationship/
 
 https://stackoverflow.com/questions/45269146/laravel-seeding-many-to-many-relationship
+
+### Resizing pictues
+
+-   raw
+-   full
+-   medium
+-   small
+-   lightbox 1920 x 1080
+-   Website banner 1200 x 400 pixels

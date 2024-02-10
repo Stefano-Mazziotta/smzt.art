@@ -28,7 +28,7 @@ class StoreAlbumRequest extends FormRequest
             [
             'title' => 'required|string|max:32',
             'description' => 'required|string|min:14|max:100',
-            'thumbnail' => 'required|image|mimes:jpg,webp|max:2048',
+            'featuredImage' => 'required|image|mimes:jpg,webp|max:2048',
             'photos' => 'array',
             'photos.*' => 'image|mimes:jpg,webp|max:2048',
             'labels' => 'array',
