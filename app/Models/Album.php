@@ -12,7 +12,7 @@ class Album extends Model
         'title',
         'description',
         'slug',
-        'thumbnail'
+        'featuredPhoto'
     ];
 
      public function photos()
