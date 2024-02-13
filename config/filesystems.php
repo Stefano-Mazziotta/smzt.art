@@ -44,18 +44,26 @@ return [
             'throw' => false,
         ],
 
-        'album_featured_images' => [
+        'album_featured_photos' => [
             'driver' => 'local',
-            'root' => public_path('uploads/album_featured_images'),
-            'url' => env('APP_URL').'/storage/uploads/album_featured_images',
+            'root' => public_path('uploads/album_featured_photos'),
+            'url' => env('APP_URL').'/storage/uploads/album_featured_photos',
             'visibility' => 'public',
             'throw' => false,
         ],
 
-         'photos' => [
+         'masonry_gallery' => [
             'driver' => 'local',
-            'root' => public_path('uploads/photos'),
-            'url' => env('APP_URL').'/storage/uploads/photos',
+            'root' => public_path('uploads/masonry_gallery'),
+            'url' => env('APP_URL').'/storage/uploads/masonry_gallery',
+            'visibility' => 'public',
+            'throw' => false,
+        ],
+
+        'lightbox' => [
+            'driver' => 'local',
+            'root' => public_path('uploads/lightbox'),
+            'url' => env('APP_URL').'/storage/uploads/lightbox',
             'visibility' => 'public',
             'throw' => false,
         ],

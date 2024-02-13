@@ -24,15 +24,15 @@ class StoreAlbumRequest extends FormRequest
      */
     public function rules(): array
     {
-        return 
+        return
             [
-            'title' => 'required|string|max:32',
-            'description' => 'required|string|min:14|max:100',
-            'featuredImage' => 'required|image|mimes:jpg,webp|max:2048',
-            'photos' => 'array',
-            'photos.*' => 'image|mimes:jpg,webp|max:2048',
-            'labels' => 'array',
-            'labels.*' => 'required|numeric'
-        ];
+                'title' => 'required|string|max:32',
+                'description' => 'required|string|min:14|max:100',
+                'featuredPhoto' => 'required|image|mimes:jpg,webp|max:2048',
+                // 'photos' => 'required|array',
+                // 'photos.*' => 'image|mimes:jpg,webp|max:2048',
+                // 'labelIds' => 'required|array',
+                // 'labelIds.*' => 'numeric'
+            ];
     }
 }

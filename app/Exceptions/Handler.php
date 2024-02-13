@@ -29,7 +29,7 @@ class Handler extends ExceptionHandler
             //
         });
     }
-    
+
     /**
      * Render an exception into an HTTP response.
      *
@@ -50,6 +50,18 @@ class Handler extends ExceptionHandler
                 'message' => 'Ops! Some errors occurred',
                 'errors' => $errors
             ], 422);
+        }
+
+        // Handle other types of exceptions resulting in status code 500
+        if ($this->isHttpException($exception) && $exception->getCode() == 500) {
+            // Log the exception
+            error_log("Internal Server Error: " . $exception->getMessage());
+
+            // Return a JSON response with a generic error message
+            return response()->json([
+                'success' => false,
+                'message' => 'Internal Server Error',
+            ], 500);
         }
 
         return parent::render($request, $exception);

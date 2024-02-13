@@ -9,15 +9,15 @@ class Album extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'title',
+        'title', // title must be unique
         'description',
         'slug',
         'featuredPhoto'
     ];
 
-     public function photos()
+    public function photos()
     {
-        return $this->belongsToMany(Photo::class, 'albums_photos', 'album_id','photo_id');
+        return $this->belongsToMany(Photo::class, 'albums_photos', 'album_id', 'photo_id');
     }
 
     public function labels()
