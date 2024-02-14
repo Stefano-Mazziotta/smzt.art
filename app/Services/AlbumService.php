@@ -31,15 +31,16 @@ class AlbumService
             'featuredPhoto' => $featuredPhotoPath
         ]);
 
+        $uploadedPhotos = $albumData['photos'];
+        $photos = $this->photoService->storePhotos($uploadedPhotos); // return a photo entity array 
+
+
+
         // relations
-        // $photosFiles = $albumData['photos']; // array photo entity
-        // $labelIds = $albumData['labelIds']; // array label entity
+        $labelIds = $albumData['labelIds']; // array label entity
 
-        // upload album's photos
-        // - optimize image
-        // - save image to /public 
-        // - get path and then create photo entity with relations between photo-album photo-label
 
+        // create relations between album-photo
         // create relations between album-label
 
 

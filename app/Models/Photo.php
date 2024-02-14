@@ -15,16 +15,20 @@ class Photo extends Model
         'title',
         'description',
         'width',
-        'height'
+        'height',
+        'path'
     ];
 
-    public function location(){
+    public function location()
+    {
         return $this->belongsTo(Location::class, 'location_id');
     }
-    public function camera(){
+    public function camera()
+    {
         return $this->belongsTo(Camera::class, 'camera_id');
     }
-    public function film(){
+    public function film()
+    {
         return $this->belongsTo(Film::class, 'film_id');
     }
 

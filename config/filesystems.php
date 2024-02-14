@@ -39,7 +39,7 @@ return [
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'url' => env('APP_URL') . '/storage',
             'visibility' => 'public',
             'throw' => false,
         ],
@@ -47,15 +47,15 @@ return [
         'album_featured_photos' => [
             'driver' => 'local',
             'root' => public_path('uploads/album_featured_photos'),
-            'url' => env('APP_URL').'/storage/uploads/album_featured_photos',
+            'url' => env('APP_URL') . '/storage/uploads/album_featured_photos',
             'visibility' => 'public',
             'throw' => false,
         ],
 
-         'masonry_gallery' => [
+        'gallery' => [
             'driver' => 'local',
-            'root' => public_path('uploads/masonry_gallery'),
-            'url' => env('APP_URL').'/storage/uploads/masonry_gallery',
+            'root' => public_path('uploads/gallery'),
+            'url' => env('APP_URL') . '/storage/uploads/gallery',
             'visibility' => 'public',
             'throw' => false,
         ],
@@ -63,7 +63,7 @@ return [
         'lightbox' => [
             'driver' => 'local',
             'root' => public_path('uploads/lightbox'),
-            'url' => env('APP_URL').'/storage/uploads/lightbox',
+            'url' => env('APP_URL') . '/storage/uploads/lightbox',
             'visibility' => 'public',
             'throw' => false,
         ],
